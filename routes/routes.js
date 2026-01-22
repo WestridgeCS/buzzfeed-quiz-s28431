@@ -57,16 +57,59 @@ function getOutcome({q1,q2,q3,q4}) {
   let q3int = parseInt(q3);
   let q4int = parseInt(q4);
   let qtotal = q1int+q2int+q3int+q4int;
-  if (qtotal===3) {
+  if (qtotal===3  || qtotal===4) {
     return {
-      heading: '🔥 The Blaze Challenger',
-      text: 'You pick fights with every trainer you see. Bold… and effective.'
+      heading: 'your color is RED!',
+      text: 'RED !!!'
+    };
+  }
+  if (qtotal===5) {
+    return {
+      heading: 'your color is CORAL',
+      text: 'CORAL!!'
+    };
+  }
+  if (qtotal===6) {
+    return {
+      heading: 'your color is ORANGE',
+      text: 'ORANGE!!'
+    };
+  }
+  if (qtotal===7 || qtotal===8) {
+    return {
+      heading: 'your color is YELLOW',
+      text: 'YELLOWWW'
+    };
+  }
+  if (qtotal===9 || qtotal===10 || qtotal===11) {
+    return {
+      heading: 'your color is PINK',
+      text: 'pink :3'
+    };
+  }
+
+  if (qtotal===12 || qtotal===13 || qtotal===14) {
+    return {
+      heading: 'your color is TEAL or GREEN',
+      text: 'teal or green are pretty COOL colors >:3.'
+    };
+  }
+  if (qtotal===15 || qtotal===16) {
+    return {
+      heading: 'your color is BLUE',
+      text: 'blue.'
+    };
+  }
+  if (qtotal===17) {
+    return {
+      heading: 'your color is PURPLE',
+      text: 'PURPLE'
     };
   }
   // Default ending
   return {
-    heading: '🎒 The Wandering Trainer',
-    text: 'Your journey is just beginning. Add more endings to reveal your destiny!'
+    heading: 'you are nothing',
+    text: 'colorless 3:',
   };
 }
 
