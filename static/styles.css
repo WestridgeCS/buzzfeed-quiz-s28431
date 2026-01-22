@@ -1,7 +1,21 @@
 body {
   font-family: system-ui, Arial, sans-serif;
-  background: #f6f7fb;
+  background: wheat;
   margin: 0;
   color: #222;
+}
+
+main {
+  text-align: center;
+  background-color: oldlace;
+  width: 800px;
+  margin: auto;
+  margin-top:20vh;
+  border: 10px burlywood solid;
+  padding: 10px;
+}
+
+p{
+  padding:5px;
 }
 
